@@ -1,0 +1,12 @@
+.button {
+  &--secundary {
+    color: var(--white);
+    border-bottom: 3px solid var(--primary-green);
+  }
+
+  &--primary {
+    background-color: var(--primary-green);
+    color: var(--primary);
+    padding: 22px;
+  }
+}
