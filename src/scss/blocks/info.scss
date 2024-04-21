@@ -1,0 +1,18 @@
+@use '../mixins/responsive.scss' as *;
+
+.info {
+    text-align: center;
+    background-color: FCF8FF;
+    border-bottom-left-radius: 400px 50px;
+    border-bottom-right-radius: 400px 50px;
+    margin-bottom: 100px;
+
+    @media screen and (width>=768px) {
+        .info {
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+            justify-content: left;
+        }
+    }
+}

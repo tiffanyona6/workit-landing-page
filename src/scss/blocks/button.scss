@@ -9,4 +9,11 @@
     color: var(--primary);
     padding: 22px;
   }
+
+  &--primary-card {
+    background-color: var(--primary-green);
+    color: var(--primary);
+    padding: 22px;
+    margin-bottom: 32px;
+  }
 }

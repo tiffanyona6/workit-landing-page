@@ -1,0 +1,23 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__image {
+        position: relative;
+        content: '';
+        top: 50px;
+        width: 281px;
+        height: 281px;
+        z-index: -1;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--dark-purple);
+        margin-bottom: 74px;
+    }
+}

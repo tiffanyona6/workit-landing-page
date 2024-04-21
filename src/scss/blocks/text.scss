@@ -1,1 +1,39 @@
+@use '../mixins/responsive.scss' as *;
 
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Manrope", sans-serif;
+
+    &--number {
+        margin-bottom: 24px;
+        font-size: 20px;
+    }
+
+    &--descript {
+
+        margin-bottom: 40px;
+        color: var(--davys-grey);
+
+    }
+
+    @media screen and (width>=768px) {
+
+        &--descript,
+        &--number,
+        {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: left;
+    }
+}
+
+
+&--card {
+    color: var(--white);
+    padding: 0 31px 0 31px;
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+}
