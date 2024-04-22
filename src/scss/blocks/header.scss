@@ -1,4 +1,4 @@
-@use '../mixins/responsive.scss' as *;
+@use "../mixins/responsive.scss" as *;
 
 .header {
   padding: 0 1rem 0 1rem;
@@ -6,15 +6,27 @@
   border-bottom-left-radius: 400px 50px;
   border-bottom-right-radius: 400px 50px;
 
+  @include responsive(tablet) {
+    background-image: url(/assets/images/bg-pattern-1.svg),
+      url(/assets/images/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: -50% 20%, 115% 50%;
+  }
 
-
+  @include responsive(desktop) {
+    background-image: url(/assets/images/bg-pattern-1.svg),
+      url(/assets/images/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: -15% 20%, 105% 50%;
+  }
 
   &__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 38px;
+    padding-bottom: 0;
     margin-bottom: 64px;
-
   }
 
   &__button {
@@ -29,11 +41,18 @@
     top: 100px;
     left: 10px;
     margin-bottom: 150px;
-  }
 
-  @media screen and (width>=768px) {
-    .header {
-      background-image: url(../../assets/images/bg-pattern-1.svg);
+    @include responsive(tablet) {
+      width: 514px;
+      position: relative;
+      top: 130px;
+      left: 150px;
+    }
+    @include responsive(desktop) {
+      width: 767px;
+      position: relative;
+      top: 190px;
+      left: 400px;
     }
   }
 }

@@ -1,13 +1,36 @@
+@use "../mixins/responsive.scss" as *;
+@use "../mixins/hover.scss" as *;
 .button {
   &--secundary {
     color: var(--white);
     border-bottom: 3px solid var(--primary-green);
   }
 
+  @include hover {
+    background-color: var(--dark-purple);
+    color: var(--primary-green);
+  }
+
   &--primary {
     background-color: var(--primary-green);
     color: var(--primary);
     padding: 22px;
+
+    @include responsive(tablet) {
+      font-size: 16px;
+      width: 133px;
+    }
+
+    @include responsive(desktop) {
+      font-size: 18px;
+      width: 161px;
+      height: 61px;
+    }
+    @include hover {
+      background-color: var(--dark-purple);
+      color: var(--primary-green);
+      border: 1px solid var(--primary-green);
+    }
   }
 
   &--primary-card {
@@ -15,5 +38,15 @@
     color: var(--primary);
     padding: 22px;
     margin-bottom: 32px;
+
+    @include responsive(desktop) {
+      font-size: 18px;
+    }
+
+    @include hover {
+      background-color: var(--dark-purple);
+      color: var(--primary-green);
+      border: 1px solid var(--primary-green);
+    }
   }
 }

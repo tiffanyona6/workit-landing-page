@@ -1,4 +1,4 @@
-@use '../mixins/responsive.scss' as *;
+@use "../mixins/responsive.scss" as *;
 
 .title {
   font-family: "Fraunces", serif;
@@ -9,20 +9,22 @@
 
     color: var(--white);
     margin-bottom: 40px;
-  }
 
-
-  @media screen and (width>=768px) {
-    &--header {
-      padding: 0 98px 0 97px
+    @include responsive(tablet) {
+      width: 473px;
+      font-size: 3.75rem;
     }
 
-
+    @include responsive(desktop) {
+      width: 473px;
+      font-size: 60px;
+    }
   }
 
   &--info {
     color: var(--dark-purple);
     font-size: 28px;
+    width: max-content;
   }
 
   &--card {
@@ -30,5 +32,13 @@
     color: var(--white);
     margin-bottom: 16px;
     line-height: 48px;
+
+    @include responsive(tablet) {
+      font-size: 48px;
+    }
+
+    @include responsive(tablet) {
+      font-size: 56px;
+    }
   }
 }

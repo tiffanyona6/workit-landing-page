@@ -1,88 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon" />
-  <link rel="icon" type="image/svg+xml" href="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap"
-    rel="stylesheet" />
+    <title>Workit landing page</title>
+  </head>
 
-  <title>Workit landing page</title>
-</head>
+  <body>
+    <header class="header">
+      <div class="header__nav">
+        <img
+          class="logo logo--light"
+          src="./assets/images/logo-light.svg"
+          alt="Logo light"
+        />
 
-<body>
-  <header class="header">
-    <div class="header__nav">
-      <img class="logo logo--light" src="./assets/images/logo-light.svg" alt="Logo light" />
-
-      <a class="button button--secundary" href="#">Apply for access</a>
-    </div>
-    <div class="header__button">
-      <h1 class="title title--header">Data tailored to your needs.</h1>
-      <a class="button button--primary" href="#">Learn more</a>
-    </div>
-    <div class="header__image">
-      <img src="./assets/images/image-hero.webp" alt="Image hero" />
-    </div>
-  </header>
-
-  <main class="main">
-    <div class="info">
-      <p class="text text--number">1</p>
-      <H3 class="title title--info">Actionable insights</H3>
-      <p class="text text--descript">Optimize your products, improve customer satisfaction and stay ahead of the
-        competition with our product data analytics.</p>
-    </div>
-    <div class="info">
-      <p class="text text--number">2</p>
-      <H3 class="title title--info">Data-driven decisions</H3>
-      <p class="text text--descript">Make data-driven decisions with our product data analytics. Our AI-generated
-        reports help you unlock insights hidden in your product data.</p>
-    </div>
-    <div class="info">
-      <p class="text text--number">3</p>
-      <H3 class="title title--info">Always affordable</H3>
-      <p class="text text--descript">Always affordable pricing that scales with your business. Get top-quality product
-        data analytics services without hidden costs or unexpected fees.</p>
-    </div>
-
-    <div class="card">
-      <div class="card__image">
-        <img src="./assets/images/image-founder.webp" alt="Founder">
+        <a class="button button--secundary" href="#">Apply for access</a>
       </div>
-      <div class=card__container>
-        <h3 class="title title--card">Be the first to test</h3>
-        <p class="text text--card">Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become
-          a
-          beta tester for our app and kickstart your company. Apply for access below and I’ll be in touch to schedule a
-          call.</p>
-        <a class="button button--primary-card" href="#">Apply for access</a>
+      <div class="header__button">
+        <h1 class="title title--header">Data tailored to your needs.</h1>
+        <a class="button button--primary" href="#">Learn more</a>
       </div>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class=" footer__logo">
-      <img src="./assets/images/logo-dark.svg" alt="logo dark">
-    </div>
-    <span class="footer__icon">
-      <img src="./assets/images/icon-facebook.svg" alt="icon facebook">
-      <img src="./assets/images/icon-twitter.svg" alt="icon twitter">
-      <img src="./assets/images/icon-instagram.svg" alt="icon icon-instagram">
-    </span>
-  </footer>
+      <div>
+        <img
+          class="header__image"
+          src="./assets/images/image-hero.webp"
+          alt="Image hero"
+        />
+      </div>
+    </header>
 
+    <main class="main">
+      <div class="info-container">
+        <div class="info">
+          <p class="text text--number">1</p>
+          <div>
+            <h3 class="title title--info">Actionable insights</h3>
+            <p class="text text--descript">
+              Optimize your products, improve customer satisfaction and stay
+              ahead of the competition with our product data analytics.
+            </p>
+          </div>
+        </div>
+        <div class="info">
+          <p class="text text--number">2</p>
+          <div>
+            <h3 class="title title--info">Data-driven decisions</h3>
+            <p class="text text--descript">
+              Make data-driven decisions with our product data analytics. Our
+              AI-generated reports help you unlock insights hidden in your
+              product data.
+            </p>
+          </div>
+        </div>
+        <div class="info">
+          <p class="text text--number">3</p>
+          <div>
+            <h3 class="title title--info">Always affordable</h3>
+            <p class="text text--descript">
+              Always affordable pricing that scales with your business. Get
+              top-quality product data analytics services without hidden costs
+              or unexpected fees.
+            </p>
+          </div>
+        </div>
+      </div>
 
-  <script type="module" src="./js/index.js"></script>
-</body>
+      <div class="card">
+        <div class="card__image">
+          <img src="./assets/images/image-founder.webp" alt="Founder" />
+        </div>
+        <div class="card__container">
+          <h3 class="title title--card">Be the first to test</h3>
+          <p class="text text--card">
+            Hi, I'm Louis Graham, the founder of the company. Book a demo call
+            with me to become a beta tester for our app and kickstart your
+            company. Apply for access below and I’ll be in touch to schedule a
+            call.
+          </p>
+          <a class="button button--primary-card" href="#">Apply for access</a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="./assets/images/logo-dark.svg" alt="logo dark" />
+      </div>
+      <span class="footer__icon">
+        <img src="./assets/images/icon-facebook.svg" alt="icon facebook" />
+        <img src="./assets/images/icon-twitter.svg" alt="icon twitter" />
+        <img
+          src="./assets/images/icon-instagram.svg"
+          alt="icon icon-instagram"
+        />
+      </span>
+    </footer>
 
+    <script type="module" src="./js/index.js"></script>
+  </body>
 </html>

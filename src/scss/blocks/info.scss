@@ -1,18 +1,41 @@
-@use '../mixins/responsive.scss' as *;
+@use "../mixins/responsive.scss" as *;
 
 .info {
+  text-align: center;
+
+  @include responsive(tablet) {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 98px 0 97px;
+  }
+
+  @include responsive(desktop) {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    background-color: FCF8FF;
+    align-items: center;
+    width: 1114px;
+    gap: 26px;
+    line-height: 32px;
+    font-size: 18px;
+  }
+}
+
+.info-container {
+  @include responsive(desktop) {
+    position: relative;
+    top: -190px;
+    padding-top: 290px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
     border-bottom-left-radius: 400px 50px;
     border-bottom-right-radius: 400px 50px;
-    margin-bottom: 100px;
-
-    @media screen and (width>=768px) {
-        .info {
-            display: flex;
-            flex-direction: row;
-            text-align: left;
-            justify-content: left;
-        }
-    }
+    z-index: -1;
+    background-color: #fcf8ff;
+  }
 }

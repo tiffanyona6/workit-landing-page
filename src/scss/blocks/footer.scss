@@ -1,20 +1,22 @@
+@use "../mixins/responsive.scss" as *;
 .footer {
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 85px;
+  }
 
+  &__icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
 
-
-    &__logo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 85px;
+    @include responsive(tablet) {
+      margin-bottom: 120px;
     }
-
-    &__icon {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 28px;
-    }
+  }
 }

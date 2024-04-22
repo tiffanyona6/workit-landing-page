@@ -1,8 +1,8 @@
-@use '../mixins/responsive.scss' as *;
+@use "../mixins/responsive.scss" as *;
 
 .main {
-    padding: 0 16px 0 16px;
-
-
-
+  padding: 0 16px 0 16px;
+  border-bottom-left-radius: 400px 50px;
+  border-bottom-right-radius: 400px 50px;
+  margin-bottom: 100px;
 }
