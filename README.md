@@ -29,7 +29,7 @@ Práctica con SASS.
 
 **TU NOMBRE**
 
-- [tiffanyona6@hmail.com]
+- tiffanyona6@hmail.com
 - [LinkedIn](https://www.linkedin.com/in/tiffany-o%C3%B1a-/)
 - [Porfolio web](https://tu-dominio.com/)
 
